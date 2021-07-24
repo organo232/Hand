@@ -11,7 +11,7 @@ global class TestH implements Auth.SamlJitHandler  {
             JITCountryAttributeMapping__mdt cam = [SELECT Id, LocaleSidKey__c, TimeZoneSidKey__c, CurrencyIsoCode__c, LanguageLocaleKey__c, EmailEncodingKey__c 
                                                       FROM JITCountryAttributeMapping__mdt 
                                                       WHERE Country__c =:country];
-
+//test
             User u = new User();
             String username = attributes.get('email');
             u.username = username;
